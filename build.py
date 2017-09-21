@@ -139,6 +139,7 @@ window.BLOCKLY_BOOT = function() {
             'developers.google.com/blockly/guides/modify/web/closure');
     }
     dir = window.BLOCKLY_DIR.match(/[^\\/]+$/)[0];
+    dir = dir.replace(window.location.host, '');
   }
 """)
     add_dependency = []
